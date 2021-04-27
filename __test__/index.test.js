@@ -52,27 +52,50 @@
 // })
 
 // Exercise 04
-const multiplicacion = require('../src/index');
+// const multiplicacion = require('../src/index');
 
-describe('multiplication validation', () => {
+// describe('multiplication validation', () => {
 
-  test('2 x 1 is 2', () => {
-    expect(multiplicacion(2,1)).toBe(2);
+//   test('2 x 1 is 2', () => {
+//     expect(multiplicacion(2,1)).toBe(2);
+//   })
+
+//   test('2 x -1 is -2', () => {
+//     expect(multiplicacion(2,-1)).toBe(-2);
+//   })
+
+//   test('2 x 0 is 0', () => {
+//     expect(multiplicacion(2,0)).toBe(0);
+//   })
+
+//   //Otra forma que se me ocurrio
+//   test('2 x 0 is 0', () => {
+//     expect(multiplicacion(2,0)).toBeFalsy();
+//   })
+
+//   test('factorA is not a number', () => {
+//     expect(multiplicacion('stringExample',0)).toBe(NaN);
+//   })
+
+//   test('factorB is not a number', () => {
+//     expect(multiplicacion(0,'stringExample')).not.toBe(Number);
+//   })
+// })
+
+// Exercise 05
+// Acá empece a practicar los matchers un poquito mas a fondo
+const division = require('../src/index');
+
+describe('division validation', () => {
+  test('division not posible', () => {
+    expect(division).not.toBeNull();
+    expect(division).toBeDefined();
+    expect(division(10,0)).toBeTruthy();
   })
 
-  test('2 x -1 is -2', () => {
-    expect(multiplicacion(2,-1)).toBe(-2);
-  })
-
-  test('2 x 0 is 0', () => {
-    expect(multiplicacion(2,0)).toBe(0);
-  })
-
-  test('factorA is not a number', () => {
-    expect(multiplicacion('stringExample',0)).toBe(NaN);
-  })
-
-  test('factorB is not a number', () => {
-    expect(multiplicacion(0,'stringExample')).not.toBe(Number);
+  test('division posible', () => {
+    expect(division).not.toBeNull();
+    expect(division).toBeDefined();
+    expect(division(0,10)).toBeFalsy();
   })
 })
