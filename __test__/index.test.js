@@ -33,20 +33,46 @@
 // })
 
 // Exercise 03
-const resta = require('../src/index');
+// const resta = require('../src/index');
 
-describe('subst validation', () => {
+// describe('subst validation', () => {
 
-  test('1 - 2 is -1', () => {
-    expect(resta(1,2)).toBe(-1);
+//   test('1 - 2 is -1', () => {
+//     expect(resta(1,2)).toBe(-1);
+//   })
+
+//   test('1 - (-4) is 5', () => {
+//     expect(resta(1,-4)).toBe(5);
+//   })
+
+//   test('1 - (1) is 0', () => {
+//     expect(resta(1,1)).toBe(0);
+//   })
+
+// })
+
+// Exercise 04
+const multiplicacion = require('../src/index');
+
+describe('multiplication validation', () => {
+
+  test('2 x 1 is 2', () => {
+    expect(multiplicacion(2,1)).toBe(2);
   })
 
-  test('1 - (-4) is 5', () => {
-    expect(resta(1,-4)).toBe(5);
+  test('2 x -1 is -2', () => {
+    expect(multiplicacion(2,-1)).toBe(-2);
   })
 
-  test('1 - (1) is 0', () => {
-    expect(resta(1,1)).toBe(0);
+  test('2 x 0 is 0', () => {
+    expect(multiplicacion(2,0)).toBe(0);
   })
 
+  test('factorA is not a number', () => {
+    expect(multiplicacion('stringExample',0)).toBe(NaN);
+  })
+
+  test('factorB is not a number', () => {
+    expect(multiplicacion(0,'stringExample')).not.toBe(Number);
+  })
 })
