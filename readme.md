@@ -8,12 +8,13 @@ automatización de tests, respondiendo con la url de Github del nuevo repositori
 
 # PASOS:
 	1) Copiar y pegar los ejercicios del final del documento en un archivo JavaScript (.js). Dichos ejercicios serán las funciones a testear.
-  2) Crear un repositorio propio donde subir tanto el archivo .js como los test escritos.
-  3) Lograr una cobertura del 100% de todos los campos de salida de los test (Statements,
-  Branchs, Functions, Lines).
+  	2) Crear un repositorio propio donde subir tanto el archivo .js como los test escritos.
+  	3) Lograr una cobertura del 100% de todos los campos de salida de los test (Statements,
+  	Branchs, Functions, Lines).
 
 # Ejercicios:
 *Copiar y pegar en un archivo JavaScript
+
 //1
 const texto = (texto) => {
 return texto
