@@ -1,0 +1,27 @@
+{
+  "name": "back",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarioFalzone/app-11.git"
+  },
+  "author": "Dario E. Falzone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarioFalzone/app-11/issues"
+  },
+  "homepage": "https://github.com/DarioFalzone/app-11#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7"
+  }
+}
