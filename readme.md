@@ -1,4 +1,14 @@
 # WEEK 12
+
+### Note 📋
+
+folder src > index.js (archivo principal)
+folder __test__ > index.test.js (archivo de pruebas)
+
+-Para poder probar los ejercicios:
+	Descomentar el ejercicio correspondiente tanto en el archivo index, como en su archivo de test correspondiente.
+	Cualquier duda, no dude en ponerse en contacto conmigo :)
+
 # Descripción del problema a resolver
 La problemática de la semana 12 consiste en crear ‘Unit Tests’ para todas las funciones que se
 encuentran al final de este documento. Se deberá lograr una cobertura del 100% en todos los campos reportados por Jest.
@@ -76,3 +86,11 @@ numStr = "0" + numStr;
 }
 return numStr;
 }
+
+## Authors ✒️
+
+* [Dario Falzone](https://www.linkedin.com/in/darioflz/)
+
+## Gratitude 🎁
+
+* Many thanks to the RadiumRocket team for the opportunity to be a part. 🤓

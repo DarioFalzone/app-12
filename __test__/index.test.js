@@ -107,12 +107,24 @@ describe('tabla validator', () => {
   test('multiplicator is undefined', () => {
     expect(tableMultiplication).not.toBeNull();
     expect(tableMultiplication).toBeDefined();
-    expect(tableMultiplication(10,undefined)).toBeTruthy();
+    expect(tableMultiplication(4)).toEqual(
+     [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40]
+    );
   })
 
-  // test('table write - ok', () => {
-  //   expect(tableMultiplication).not.toBeNull();
-  //   expect(tableMultiplication).toBeDefined();
-  //   expect(tableMultiplication(10,4)).toBeLessThanOrEqual(50);
-  // })
+  test('example with multiplicador and multiplicando declarated', () => {
+    expect(tableMultiplication).not.toBeNull();
+    expect(tableMultiplication).toBeDefined();
+    expect(tableMultiplication(1,5)).not.toEqual(
+     [0, 4, 8, 64, 35, 20]
+    );
+  })
+
+  test('example negative', () => {
+    expect(tableMultiplication).not.toBeNull();
+    expect(tableMultiplication).toBeDefined();
+    expect(tableMultiplication(2,8)).not.toEqual(
+     [0, 4, 8, 64, 35, 20, 95, 50, 40]
+    );
+  })
 })
