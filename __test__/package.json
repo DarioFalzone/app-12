@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest app-12.test.js",
+    "test": "jest index.test.js",
     "test-coverage": "jest --coverage",
-    "dev": "nodemon app-12.js"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
