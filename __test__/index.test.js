@@ -84,18 +84,35 @@
 
 // Exercise 05
 // Acá empece a practicar los matchers un poquito mas a fondo
-const division = require('../src/index');
+// const division = require('../src/index');
 
-describe('division validation', () => {
-  test('division not posible', () => {
-    expect(division).not.toBeNull();
-    expect(division).toBeDefined();
-    expect(division(10,0)).toBeTruthy();
+// describe('division validation', () => {
+//   test('division not posible', () => {
+//     expect(division).not.toBeNull();
+//     expect(division).toBeDefined();
+//     expect(division(10,0)).toBeTruthy();
+//   })
+
+//   test('division posible', () => {
+//     expect(division).not.toBeNull();
+//     expect(division).toBeDefined();
+//     expect(division(0,10)).toBeFalsy();
+//   })
+// })
+
+// Exercise 06
+const tableMultiplication = require('../src/index');
+
+describe('tabla validator', () => {
+  test('multiplicator is undefined', () => {
+    expect(tableMultiplication).not.toBeNull();
+    expect(tableMultiplication).toBeDefined();
+    expect(tableMultiplication(10,undefined)).toBeTruthy();
   })
 
-  test('division posible', () => {
-    expect(division).not.toBeNull();
-    expect(division).toBeDefined();
-    expect(division(0,10)).toBeFalsy();
-  })
+  // test('table write - ok', () => {
+  //   expect(tableMultiplication).not.toBeNull();
+  //   expect(tableMultiplication).toBeDefined();
+  //   expect(tableMultiplication(10,4)).toBeLessThanOrEqual(50);
+  // })
 })
