@@ -1,5 +1,14 @@
-const suma = require('./index');
+const texto = require('../src/index');
 
-test('sumar 1 + 2 es igual a 3', () => {
-  expect(suma(1, 2)).toBe(3);
-});
+// Exercise 01
+describe('text validation', () => {
+
+  test('this is a text',() => {
+    expect(texto('')).toBe('');
+  })
+
+  test('this is not a text', () => {
+    expect(texto(1)).not.toBe('');
+  })
+
+})

@@ -1,16 +1,16 @@
 //*Copiar y pegar en un archivo JavaScript
 
-function suma(a, b) {
-  return a + b;
-}
-module.exports = suma;
-
-
 //1
-// const texto = (texto) => { return texto; }
+const texto = (texto) => {
+  return texto;
+}
+
+module.exports = texto;
 
 // //2
-// const suma = (sumandoA, sumandoB) => { return sumandoA + sumandoB; }
+// const suma = (sumandoA, sumandoB) => {
+//   return sumandoA + sumandoB;
+// }
 
 // //3
 // const resta = (minuendo, sustraendo) => { return minuendo - sustraendo; }
