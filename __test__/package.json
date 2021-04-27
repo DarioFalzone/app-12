@@ -4,19 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "test": "jest app-12.test.js",
+    "test-coverage": "jest --coverage",
+    "dev": "nodemon app-12.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DarioFalzone/app-11.git"
+    "url": "git+https://github.com/DarioFalzone/app-12"
   },
   "author": "Dario E. Falzone",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DarioFalzone/app-11/issues"
+    "url": "https://github.com/DarioFalzone/app-12"
   },
-  "homepage": "https://github.com/DarioFalzone/app-11#readme",
+  "homepage": "https://github.com/DarioFalzone/app-12#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
