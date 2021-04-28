@@ -52,22 +52,22 @@
 // module.exports = potencia;
 
 // //8
-const anidada = (a,b) => {
-  function cuadrado(x) {
-    return x * x;
-  }
-  return cuadrado(a) + cuadrado(b);
-}
-module.exports = anidada;
+// const anidada = (a,b) => {
+//   function cuadrado(x) {
+//     return x * x;
+//   }
+//   return cuadrado(a) + cuadrado(b);
+// }
+// module.exports = anidada;
 
 // //9
-// const cerosIzq = (num, totalLength) => {
-//   var numStr = num.toString();
-//   var numCeros = totalLength - numStr.length;
+const cerosIzq = (num, totalLength) => {
+  var numStr = num.toString();
+  var numCeros = totalLength - numStr.length;
 
-//   for (var i = 1; i <= numCeros; i++) {
-//     numStr = "0" + numStr;
-//   }
-//   return numStr;
-// }
-// module.exports = ceroIzq;
+  for (var i = 1; i <= numCeros; i++) {
+    numStr = "0" + numStr;
+  }
+  return numStr;
+}
+module.exports = cerosIzq;

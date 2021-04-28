@@ -151,25 +151,27 @@
 // })
 
 // Exercise 08
-const anidada = require('../src/index');
+// const anidada = require('../src/index');
 
-describe('Function anidada validator', () => {
-  test('The sum of the squares of -1 and 6 should be 37', () => {
-    expect(anidada(-1,6)).toEqual(37);
-  });
+// describe('Function anidada validator', () => {
+//   test('The sum of the squares of -1 and 6 should be 37', () => {
+//     expect(anidada(-1,6)).toEqual(37);
+//   });
 
-  test('this function exists', () => {
-    expect(anidada).toBeDefined();
-  });
+//   test('this function exists', () => {
+//     expect(anidada).toBeDefined();
+//   });
 
-  test('The sum of the squares of 10 and -65 will not be 40', () => {
-    expect(anidada(10,-65)).not.toEqual(37);
-  });
-})
+//   test('The sum of the squares of 10 and -65 will not be 40', () => {
+//     expect(anidada(10,-65)).not.toEqual(37);
+//   });
+// })
 
 // Exercise 09
-// const tableMultiplication = require('../src/index');
+const cerosIzq = require('../src/index');
 
-// describe('', () => {
-
-// })
+describe('Function cerosIzq validator', () => {
+  test('The result of applyin this function to 5 and 2 should return the string: 05', () => {
+    expect(cerosIzq(5,2)).toBe('05');
+  });
+})
