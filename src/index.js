@@ -34,21 +34,22 @@
 // module.exports = division;
 
 //6
-const tablaMultiplicar = (multiplicando, multiplicador) => {
-  if (multiplicador === undefined) multiplicador = 10;
+// const tablaMultiplicar = (multiplicando, multiplicador) => {
+//   if (multiplicador === undefined) multiplicador = 10;
 
-  let table = [];
-  for (let i = 0; i <= multiplicador; i++){
-    table.push(multiplicando * i);
-  }
-  return table;
-}
-module.exports = tablaMultiplicar;
+//   let table = [];
+//   for (let i = 0; i <= multiplicador; i++){
+//     table.push(multiplicando * i);
+//   }
+//   return table;
+// }
+// module.exports = tablaMultiplicar;
 
 // //7
-// const potencia = (base, exponente) => {
-//   return Math.pow(base, exponente)
-// }
+const potencia = (base, exponente) => {
+  return Math.pow(base, exponente)
+}
+module.exports = potencia;
 
 // //8
 // const anidada = (a,b) => {
@@ -57,6 +58,7 @@ module.exports = tablaMultiplicar;
 //   }
 //   return cuadrado(a) + cuadrado(b);
 // }
+// module.exports = anidada;
 
 // //9
 // const cerosIzq = (num, totalLength) => {
@@ -68,3 +70,4 @@ module.exports = tablaMultiplicar;
 //   }
 //   return numStr;
 // }
+// module.exports = ceroIzq;

@@ -101,30 +101,65 @@
 // })
 
 // Exercise 06
-const tableMultiplication = require('../src/index');
+// const tableMultiplication = require('../src/index');
 
-describe('tabla validator', () => {
-  test('multiplicator is undefined', () => {
-    expect(tableMultiplication).not.toBeNull();
-    expect(tableMultiplication).toBeDefined();
-    expect(tableMultiplication(4)).toEqual(
-     [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40]
-    );
-  })
+// describe('tabla validator', () => {
+//   test('multiplicator is undefined', () => {
+//     expect(tableMultiplication).not.toBeNull();
+//     expect(tableMultiplication).toBeDefined();
+//     expect(tableMultiplication(4)).toEqual(
+//      [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40]
+//     );
+//   })
 
-  test('example with multiplicador and multiplicando declarated', () => {
-    expect(tableMultiplication).not.toBeNull();
-    expect(tableMultiplication).toBeDefined();
-    expect(tableMultiplication(1,5)).not.toEqual(
-     [0, 4, 8, 64, 35, 20]
-    );
-  })
+//   test('example with multiplicador and multiplicando declarated', () => {
+//     expect(tableMultiplication).not.toBeNull();
+//     expect(tableMultiplication).toBeDefined();
+//     expect(tableMultiplication(1,5)).not.toEqual(
+//      [0, 4, 8, 64, 35, 20]
+//     );
+//   })
 
-  test('example negative', () => {
-    expect(tableMultiplication).not.toBeNull();
-    expect(tableMultiplication).toBeDefined();
-    expect(tableMultiplication(2,8)).not.toEqual(
-     [0, 4, 8, 64, 35, 20, 95, 50, 40]
-    );
-  })
+//   test('example negative', () => {
+//     expect(tableMultiplication).not.toBeNull();
+//     expect(tableMultiplication).toBeDefined();
+//     expect(tableMultiplication(2,8)).not.toEqual(
+//      [0, 4, 8, 64, 35, 20, 95, 50, 40]
+//     );
+//   })
+// })
+
+// Exercise 07
+const potencia = require('../src/index');
+
+describe('potencia validator', () => {
+  test('-2 to the power of 3 should be -8', () => {
+    expect(potencia(-2,3)).toBe(-8);
+  });
+
+  test('-4 to the power of 2 will not be 20', () => {
+    expect(potencia(-4,2)).not.toBe(20);
+  });
+
+  test('-4 to the power of 2 will not be 20', () => {
+    expect(potencia(-4,2)).not.toBe(20);
+  });
+
+  test('this function exists', () => {
+    expect(potencia).toBeDefined();
+  });
 })
+
+// Exercise 08
+// const tableMultiplication = require('../src/index');
+
+// describe('', () => {
+
+// })
+
+// Exercise 09
+// const tableMultiplication = require('../src/index');
+
+// describe('', () => {
+
+// })
