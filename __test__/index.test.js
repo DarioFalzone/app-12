@@ -130,32 +130,42 @@
 // })
 
 // Exercise 07
-const potencia = require('../src/index');
+// const potencia = require('../src/index');
 
-describe('potencia validator', () => {
-  test('-2 to the power of 3 should be -8', () => {
-    expect(potencia(-2,3)).toBe(-8);
-  });
+// describe('potencia validator', () => {
+//   test('-2 to the power of 3 should be -8', () => {
+//     expect(potencia(-2,3)).toBe(-8);
+//   });
 
-  test('-4 to the power of 2 will not be 20', () => {
-    expect(potencia(-4,2)).not.toBe(20);
-  });
+//   test('-4 to the power of 2 will not be 20', () => {
+//     expect(potencia(-4,2)).not.toBe(20);
+//   });
 
-  test('-4 to the power of 2 will not be 20', () => {
-    expect(potencia(-4,2)).not.toBe(20);
+//   test('-4 to the power of 2 will not be 20', () => {
+//     expect(potencia(-4,2)).not.toBe(20);
+//   });
+
+//   test('this function exists', () => {
+//     expect(potencia).toBeDefined();
+//   });
+// })
+
+// Exercise 08
+const anidada = require('../src/index');
+
+describe('Function anidada validator', () => {
+  test('The sum of the squares of -1 and 6 should be 37', () => {
+    expect(anidada(-1,6)).toEqual(37);
   });
 
   test('this function exists', () => {
-    expect(potencia).toBeDefined();
+    expect(anidada).toBeDefined();
+  });
+
+  test('The sum of the squares of 10 and -65 will not be 40', () => {
+    expect(anidada(10,-65)).not.toEqual(37);
   });
 })
-
-// Exercise 08
-// const tableMultiplication = require('../src/index');
-
-// describe('', () => {
-
-// })
 
 // Exercise 09
 // const tableMultiplication = require('../src/index');

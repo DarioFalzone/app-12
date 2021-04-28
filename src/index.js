@@ -46,19 +46,19 @@
 // module.exports = tablaMultiplicar;
 
 // //7
-const potencia = (base, exponente) => {
-  return Math.pow(base, exponente)
-}
-module.exports = potencia;
+// const potencia = (base, exponente) => {
+//   return Math.pow(base, exponente)
+// }
+// module.exports = potencia;
 
 // //8
-// const anidada = (a,b) => {
-//   function cuadrado(x) {
-//     return x * x;
-//   }
-//   return cuadrado(a) + cuadrado(b);
-// }
-// module.exports = anidada;
+const anidada = (a,b) => {
+  function cuadrado(x) {
+    return x * x;
+  }
+  return cuadrado(a) + cuadrado(b);
+}
+module.exports = anidada;
 
 // //9
 // const cerosIzq = (num, totalLength) => {
